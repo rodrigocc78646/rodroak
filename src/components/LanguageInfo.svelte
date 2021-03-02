@@ -70,8 +70,8 @@
   }
 
   .header img {
-    width: 20px;
-    height: auto;
+    height: 20px;
+    max-width: 25px;
     margin-left: -5px;
   }
 

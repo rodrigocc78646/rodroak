@@ -2,9 +2,7 @@
 	import LanguageInfo from "../components/LanguageInfo.svelte";
 	import data from "../data/data.js";
 
-	let langs = data
-		.reduce((acc, val) => acc.concat(val.langs), [])
-		.filter((val, i, self) => self.indexOf(val) === i);
+	let langs = ["python", "react", "svelte", "d3", "flutter"];
 	let sel;
 
 	let scrollY;
@@ -88,7 +86,7 @@
 </style>
 
 <svelte:head>
-	<title>rodroak - my skills</title>
+	<title>my skills</title>
 </svelte:head>
 
 <svelte:window bind:scrollY />
