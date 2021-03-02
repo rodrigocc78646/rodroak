@@ -8,8 +8,9 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-end;
-		left: 1rem;
+		right: 20px;
 		top: 0.5rem;
+		z-index: 5;
 	}
 
 	h1,
