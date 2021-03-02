@@ -12,43 +12,37 @@
   }
 
   .logo {
-    padding: 20px;
-    padding-bottom: 10px;
+    height: 80px;
+    padding-left: 20px;
     position: sticky;
     top: 0;
     background-color: var(--clr-background);
-    transform: scaleY(1);
-    transform-origin: top;
-    transition: transform 200ms ease-in-out;
+    transition: box-shadow 100ms ease-in-out;
     box-shadow: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo.scrolled {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
   }
 
   .logo img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    transform: scale(1);
+    width: 50px;
+    height: 50px;
+    transform: scale(1.5);
+    opacity: 1;
+    transition: all 100ms ease-in-out;
     transform-origin: top left;
-    transition: transform 200ms ease-in-out;
   }
 
-  .logo.small {
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
-    transform: scaleY(0.55);
-    padding-bottom: 20px;
+  .logo.scrolled img {
+    transform: scale(1);
   }
 
-  .logo.small img {
-    transform: scale(0.55, 1);
-  }
-
-  .logo.smallnoimg {
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
-  }
-
-  .logo img.noimg {
+  .logo.noimg img {
+    transform: scale(0);
     opacity: 0;
-    padding-top: 30px;
   }
 
   .lang-info {
@@ -56,15 +50,14 @@
     padding: 0 20px;
     max-width: 500px;
     margin: 0 auto;
-
   }
-  
+
   .header {
     display: flex;
     align-items: center;
     margin-top: 20px;
     padding-top: 10px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1)
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
 
   .header:first-of-type {
@@ -113,16 +106,18 @@
       padding: 0 130px;
       max-width: none;
     }
+
+    .header:first-of-type {
+      margin-top: 0;
+      padding-top: 0;
+    }
   }
 </style>
 
 <svelte:window bind:scrollY />
 
 <div class="container">
-  <div
-    class="logo"
-    class:small={lang && scrollY > 25}
-    class:smallnoimg={!lang && scrollY > 25}>
+  <div class="logo" class:scrolled={scrollY > 25} class:noimg={!lang}>
     <img src={`langs/${lang}.svg`} alt={`${lang} logo`} class:noimg={!lang} />
   </div>
   <div class="lang-info">

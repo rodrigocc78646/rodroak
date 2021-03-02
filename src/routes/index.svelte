@@ -6,6 +6,8 @@
 		.reduce((acc, val) => acc.concat(val.langs), [])
 		.filter((val, i, self) => self.indexOf(val) === i);
 	let sel;
+
+	let scrollY;
 </script>
 
 <style>
@@ -86,8 +88,10 @@
 </style>
 
 <svelte:head>
-	<title>Rodroak - My skills</title>
+	<title>rodroak - my skills</title>
 </svelte:head>
+
+<svelte:window bind:scrollY />
 
 <LanguageInfo
 	lang={sel}
@@ -100,6 +104,7 @@
 				if (sel === lang) {
 					sel = undefined;
 				} else sel = lang;
+				scrollY = 0;
 			}}
 			src={`langs/${lang}.svg`}
 			alt={`logo of ${lang}`}
