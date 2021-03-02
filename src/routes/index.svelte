@@ -2,7 +2,7 @@
 	import LanguageInfo from "../components/LanguageInfo.svelte";
 	import data from "../data/data.js";
 
-	let langs = ["python", "react", "svelte", "d3", "flutter"];
+	let langs = ["python", "react", "svelte", "d3", "aws"];
 	let sel;
 
 	let scrollY;
@@ -22,7 +22,8 @@
 	}
 
 	.langs img {
-		height: 35px;
+		height: 30px;
+		max-width: 40px;
 		cursor: pointer;
 		transform: scale(1);
 		opacity: 0.5;
@@ -61,6 +62,11 @@
 			flex-direction: column;
 			justify-content: space-around;
 			box-shadow: none;
+		}
+
+		.langs img {
+			height: 35px;
+			max-width: 45px;
 		}
 
 		.langs img.selected {
