@@ -35,17 +35,24 @@ export default [
     `,
   },
   {
-    langs: ["flutter", "python", "docker"],
+    langs: ["python", "docker", "flutter"],
     year: "2020",
     html: `
-      <p>At Accenture, created a mobile application with Flutter which allowed users to submit images to an object-detection model. The model was developed by a colleague, but I was responsible for developing the API (with Flask) and for deploying it with a Docker container.</p>
+      <p>
+        At Accenture, created a mobile application with Flutter for users to submit images to an object-detection model. The model was trained by a colleague, but I developed the API (with Flask) and deployed it with a Docker container.
+      </p>
     `,
   },
   {
     langs: ["react", "next"],
     year: "2020",
     html: `
-      <p>Completed my first website! Developed it for my stepfather, to display his art works.</p>
+      <p>
+        Completed 
+        <a href="https://www.tiago-bettencourt.com" target="_blank">my first website</a>
+        ! Developed it for my stepfather, to display his art works.
+      </p>
+      <img src="screenshots/tiago.gif" alt="Porfolio website"/>
     `,
   },
   {
@@ -70,7 +77,12 @@ export default [
     langs: ["react", "next"],
     year: "2020",
     html: `
-      <p>Completed my second website, for a group of friends who are launching a litterary magazine (their project is still starting, so please keep the secret!).</p>
+      <p>
+        Completed 
+        <a href="https://www.cha-preto.com" target="_blank">my second website</a>
+        , for a group of friends who are launching a litterary magazine (their project is still starting, so please keep the secret!).
+      </p>
+      <img src="screenshots/cha.gif" alt="Litterary magazine website"/>
     `,
   },
   {
@@ -78,8 +90,8 @@ export default [
     year: "2021",
     html: `
       <p>With a friend, I am currently working on two projects:</p>
-      <p>- A website for a wine company, with React and Nextjs.</p>
-      <p>- A website for a food delivery app. This time we decided to try Svelte (with Sapper) for the frontend, and for the backend we are using the Strapi CMS, connected to a Mongo DB, as well as AWS S3 for image hosting.</p>
+      <p>- A wine company webpage, with React and Nextjs.</p>
+      <p>- A food delivery e-commerce app. This time we decided to try Svelte (with Sapper) for the frontend, and for the backend we are using the Strapi CMS, connected to a Mongo DB, as well as AWS S3 for image hosting.</p>
     `,
   },
   {
