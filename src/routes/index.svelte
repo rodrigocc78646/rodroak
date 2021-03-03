@@ -26,7 +26,7 @@
 		max-width: 40px;
 		cursor: pointer;
 		transform: scale(1);
-		opacity: 0.5;
+		opacity: 0.3;
 		transition: all 100ms ease-in-out;
 	}
 

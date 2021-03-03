@@ -55,11 +55,12 @@
   :global(.lang-info p) {
     font-weight: lighter;
     font-size: 1rem;
+    line-height: 130%;
   }
 
   :global(.lang-info img) {
-    margin: 10px 0;
-    width: calc(100% - 20px);
+    margin: 15px 0;
+    width: 100%;
     max-height: 300px;
     object-fit: contain;
     object-position: left;
