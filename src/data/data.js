@@ -3,7 +3,7 @@ export default [
     langs: ["python"],
     year: "2017",
     html: `
-      <p>First contact with Python when I decided to study AI, on the final year of my physics masters. Before, I had coding experience with C and C++ for physics, i.e. theoretical modelling and experimental data analysis.</p>
+      <p>First contact with Python when I decided to study AI. Before, I had coding experience with C and C++ for physics, i.e. theoretical modelling and experimental data analysis.</p>
     `,
   },
   {
@@ -24,7 +24,7 @@ export default [
     langs: ["d3", "react", "htmlcssjs"],
     year: "2019",
     html: `
-      <p>Read the book <a href="https://gumroad.com/l/reactd3js-engineer" target="_blank">React+D3 2018</a> by Swizec Teller about integrating D3 with React. It was recommended by a friend after showing them <a href="https://distill.pub/" target="_blank">this</a> very cool website. This was my first contact with web development.</p>
+      <p>Read the book <a href="https://gumroad.com/l/reactd3js-engineer" target="_blank">React+D3 2018</a> by Swizec Teller about integrating D3 with React. This was my first contact with web development.</p>
     `,
   },
   {
