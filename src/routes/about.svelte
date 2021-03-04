@@ -114,12 +114,65 @@
 			position: absolute;
 			top: 0;
 			left: 0;
-			transform: translate(calc(-100% - 20px), 35%);
+			width: 125px;
+			transform: translate(calc(-100% - 20px), 20px);
 		}
 
 		.event:first-of-type {
 			margin-bottom: 60px;
+			margin-top: 30px;
 		}
+	}
+
+	/* ENTER ANIMATION */
+
+	@keyframes opacity {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+
+	@keyframes position {
+		from {
+			transform: translateY(-30px);
+		}
+		to {
+			transform: translateY(0);
+		}
+	}
+
+	img,
+	.event {
+		animation-duration: 300ms;
+		animation-timing-function: ease-in-out;
+		animation-fill-mode: both;
+	}
+
+	img {
+		animation-name: opacity;
+	}
+
+	.event {
+		animation-name: opacity, position;
+	}
+
+	.event:nth-of-type(2) {
+		animation-delay: 100ms;
+	}
+
+	.event:nth-of-type(3) {
+		animation-delay: 200ms;
+	}
+
+	.event:nth-of-type(4) {
+		animation-delay: 300ms;
+	}
+
+	.event:nth-of-type(5) {
+		animation-delay: 400ms;
 	}
 </style>
 
@@ -154,7 +207,7 @@
 		</div>
 	</div>
 	<div class="event">
-		<p class="main">Then I got curious about data...</p>
+		<p class="main">Since then I've been working with data...</p>
 		<span class="timestamp">2017</span>
 		<div class="detail">
 			<h5>Accenture</h5>

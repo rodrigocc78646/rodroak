@@ -46,10 +46,10 @@ export default [
     year: "2019",
     html: `
     <p>Took some online courses about web development:</p>
-      <p>- <a href="https://reactforbeginners.com/" target="_blank">React for Beginners</a> by Wesbos.</p>
-      <p>- <a href="https://advancedreact.com/" target="_blank">Fullstack Advanced
-      React & GraphQL</a> by Wesbos.</p>
-      <p>- <a href="https://scrimba.com/learn/responsive" target="_blank">Responsive Web Design</a> (CSS course) by Kevin Powell.</p>
+      <p><a href="https://reactforbeginners.com/" target="_blank">#1</a> React for Beginners by Wesbos.</p>
+      <p><a href="https://advancedreact.com/" target="_blank">#2</a> Fullstack Advanced
+      React & GraphQL by Wesbos.</p>
+      <p><a href="https://scrimba.com/learn/responsive" target="_blank">#3</a> Responsive Web Design (CSS course) by Kevin Powell.</p>
       `,
   },
   {
@@ -62,13 +62,13 @@ export default [
     `,
   },
   {
-    langs: ["react", "next", "htmlcssjs", "firebase"],
+    langs: ["react", "next", "htmlcssjs", "firebase", "figma"],
     year: "2020",
     html: `
       <p>
         Completed 
         <a href="https://www.tiago-bettencourt.com" target="_blank">my first website</a>
-        ! Developed it for my stepfather, to display his art works. Backend: Firebase.
+        ! Developed it for my stepfather, to display his art works. Backend: Firebase. Designed with Figma.
       </p>
       <img src="screenshots/tiago.gif" alt="Porfolio website"/>
     `,
@@ -82,7 +82,7 @@ export default [
     `,
   },
   {
-    langs: ["d3", "react", "next", "htmlcssjs"],
+    langs: ["d3", "react", "next", "htmlcssjs", "figma"],
     year: "2020",
     html: `
       <p>Created <a href="https://parlamentar-next.now.sh/" target="_blank">two data visualizations</a>, using D3 and React (Nextjs).</p>
@@ -93,13 +93,13 @@ export default [
     `,
   },
   {
-    langs: ["react", "next", "htmlcssjs", "firebase"],
+    langs: ["react", "next", "htmlcssjs", "firebase", "figma"],
     year: "2020",
     html: `
       <p>
         Completed 
         <a href="https://www.cha-preto.com" target="_blank">my second website</a>
-        , for a group of friends who are launching a litterary magazine (their project is still starting, so please keep the secret!). Backend: Firebase.
+        , for a group of friends who are launching a literary magazine (they are still starting, so please keep the secret!). Backend: Firebase. Designed with Figma.
       </p>
       <img src="screenshots/cha.gif" alt="Litterary magazine website"/>
     `,

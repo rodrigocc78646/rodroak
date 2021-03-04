@@ -21,6 +21,7 @@
     box-shadow: none;
     display: flex;
     align-items: center;
+    z-index: 2;
   }
 
   .logo.scrolled {
@@ -94,13 +95,13 @@
     font-weight: normal;
   }
 
-  .header > img {
-    max-height: 20px;
+  .header img {
+    max-height: 18px;
     width: 25px;
     margin: 2px;
   }
 
-  .header img:first-of-type {
+  .header .langs {
     margin-left: auto;
   }
 
@@ -111,7 +112,7 @@
 
     .container {
       padding-top: 75px;
-      max-width: 750px;
+      max-width: 700px;
       margin-bottom: 0;
     }
 
@@ -120,10 +121,48 @@
       max-width: none;
     }
 
+    .header {
+      margin-top: 30px;
+      padding-top: 15px;
+      margin-bottom: 5px;
+    }
+
     .header:first-of-type {
       margin-top: 0;
       padding-top: 0;
     }
+  }
+
+  @media (min-width: 1000px) {
+    .container {
+      max-width: 750px;
+    }
+
+    .header h4,
+    :global(.lang-info p) {
+      font-size: 1.125rem;
+    }
+  }
+
+  /* ANIMATION */
+
+  @keyframes enter {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .header,
+  .body {
+    animation-name: enter;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
   }
 </style>
 
@@ -134,14 +173,18 @@
     <img src={`langs/${lang}.svg`} alt={`${lang} logo`} class:noimg={!lang} />
   </div>
   <div class="lang-info">
-    {#each data as d}
-      <div class="header">
+    {#each data as d, i (`${lang}-${i}`)}
+      <div class="header" style="animation-delay: {i * 100}ms">
         <h4>{d.year}</h4>
-        {#each d.langs as l}
-          <img src={`langs/${l}.svg`} alt={`${l} logo`} />
-        {/each}
+        <div class="langs">
+          {#each d.langs as l}
+            <img src={`langs/${l}.svg`} alt={`${l} logo`} />
+          {/each}
+        </div>
       </div>
-      {@html d.html}
+      <div class="body" style="animation-delay: {i * 100 + 50}ms">
+        {@html d.html}
+      </div>
     {/each}
   </div>
 </div>
