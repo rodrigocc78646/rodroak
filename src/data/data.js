@@ -31,7 +31,7 @@ export default [
     langs: ["python", "docker"],
     year: "2019",
     html: `
-      <p>At Accenture, helped develop a text analysis (NLP) software in Python for text classification, which exposed an API through a Docker container.</p>
+      <p>At Accenture, helped develop and used a text classification software in Python, which exposed an API through a Docker container.</p>
     `,
   },
   {
@@ -42,10 +42,10 @@ export default [
     `,
   },
   {
-    langs: ["htmlcssjs", "react", "next", "firebase"],
-    year: "2019",
+    langs: ["react", "next", "htmlcssjs", "firebase"],
+    year: "2019-20",
     html: `
-    <p>Took some online courses about web development:</p>
+    <p>Took some online courses about web development, for instance:</p>
       <p><a href="https://reactforbeginners.com/" target="_blank">#1</a> React for Beginners by Wesbos.</p>
       <p><a href="https://advancedreact.com/" target="_blank">#2</a> Fullstack Advanced
       React & GraphQL by Wesbos.</p>
@@ -57,7 +57,7 @@ export default [
     year: "2020",
     html: `
       <p>
-        At Accenture, created a mobile application with Flutter that served as an interface for an object-detection algorithm. The app made requets to a Flask API that I developed and deployed with a Docker container.
+        At Accenture, created a mobile application with Flutter that served as an interface for an object-detection algorithm. The app made requets to a API that I developed with Flask and deployed with Docker.
       </p>
     `,
   },
@@ -68,7 +68,7 @@ export default [
       <p>
         Completed 
         <a href="https://www.tiago-bettencourt.com" target="_blank">my first website</a>
-        ! Developed it for my stepfather, to display his art works. Backend: Firebase. Designed with Figma.
+        ! Developed it for my stepfather, to display his art works. Backend: Firebase. Designed in Figma.
       </p>
       <img src="screenshots/tiago.gif" alt="Porfolio website"/>
     `,
@@ -99,7 +99,7 @@ export default [
       <p>
         Completed 
         <a href="https://www.cha-preto.com" target="_blank">my second website</a>
-        , for a group of friends who are launching a literary magazine (they are still starting, so please keep the secret!). Backend: Firebase. Designed with Figma.
+        , for a group of friends who are launching a literary magazine (they are still starting, so please keep the secret!). Backend: Firebase. Designed in Figma.
       </p>
       <img src="screenshots/cha.gif" alt="Litterary magazine website"/>
     `,
@@ -124,7 +124,7 @@ export default [
     langs: ["svelte", "htmlcssjs"],
     year: "2021",
     html: `
-      <p>Completed this website to apply for a dream position at the Economist! This was my first (very simple) website with Svelte/Sapper.</p>
+      <p>Completed this website to apply for a dream position at the Economist! This was my first with Svelte/Sapper.</p>
     `,
   },
 ];
