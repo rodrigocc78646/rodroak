@@ -59,6 +59,10 @@
     line-height: 130%;
   }
 
+  :global(.lang-info p strong) {
+    font-weight: normal;
+  }
+
   :global(.lang-info img) {
     margin: 15px 0;
     width: 100%;

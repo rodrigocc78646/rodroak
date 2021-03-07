@@ -38,7 +38,7 @@ export default [
     langs: ["powerbi"],
     year: "2019",
     html: `
-      <p>At Accenture, created a dashboard with Power BI. It was displayed on a large touch-screen at the office for anyone to interact with and explore the daily operations data. This was my first try as a data journalist!</p>
+      <p>At Accenture, created a dashboard with Power BI. It was displayed on a large touch-screen at the office for anyone to interact with and explore the daily operations data. <strong>This was my first try as a data journalist!</strong></p>
     `,
   },
   {
@@ -57,7 +57,7 @@ export default [
     year: "2020",
     html: `
       <p>
-        At Accenture, created a mobile application with Flutter that served as an interface for an object-detection algorithm. The app made requets to a API that I developed with Flask and deployed with Docker.
+        At Accenture, created a mobile application with Flutter that served as an interface for an object-detection algorithm. The app made requets to a API that I developed with Flask and deployed with Docker. This was my first mobile app.
       </p>
     `,
   },
@@ -108,7 +108,7 @@ export default [
     langs: ["react", "next", "svelte", "htmlcssjs", "aws"],
     year: "2021",
     html: `
-      <p>With a friend, I am currently working on two projects:</p>
+      <p>Currently working on two projects, with a colleague:</p>
       <p>- A wine company webpage, with React/Nextjs.</p>
       <p>- A food delivery e-commerce app. Frontend: Svelte/Sapper; backend: Strapi CMS, connected to a Mongo DB, as well as AWS S3 for image hosting.</p>
     `,
@@ -124,7 +124,7 @@ export default [
     langs: ["svelte", "htmlcssjs"],
     year: "2021",
     html: `
-      <p>Completed this website to apply for a dream position at the Economist! This was my first with Svelte/Sapper.</p>
+      <p>Completed this website to apply for a dream position at the Economist! This the first I completed with Svelte/Sapper.</p>
     `,
   },
 ];

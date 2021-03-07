@@ -1,6 +1,13 @@
 <script>
 	let timelineHeight;
 	let windowHeight;
+
+	// Head
+	let title = "about";
+	let description =
+		"Timeline of my path to apply for adata journalist position at the Economist.";
+	let url = "https://rodroak.com/about";
+	let image = "https://rodroak.com/r.svg";
 </script>
 
 <style>
@@ -179,7 +186,18 @@
 <svelte:window bind:innerHeight={windowHeight} />
 
 <svelte:head>
-	<title>about</title>
+	<title>{title}</title>
+	<meta name="description" content={description} />
+	<meta property="og:title" content={title} />
+	<meta property="og:description" content={description} />
+	<meta property="og:url" content={url} />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content={image} />
+	<meta name="twitter:title" content={title} />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:url" content={url} />
+	<meta name="twitter:description" content={description} />
+	<meta name="twitter:image" content={image} />
 </svelte:head>
 
 <div class="timeline" bind:clientHeight={timelineHeight}>
@@ -207,7 +225,7 @@
 		</div>
 	</div>
 	<div class="event">
-		<p class="main">Since then I've been working with data...</p>
+		<p class="main">Since then I've worked with data...</p>
 		<span class="timestamp">2017</span>
 		<div class="detail">
 			<h5>Accenture</h5>
@@ -218,7 +236,7 @@
 		<p class="main">
 			For the past 2 years I’ve been practising web development.
 		</p>
-		<span class="timestamp">2018</span>
+		<span class="timestamp">2019</span>
 		<div class="detail">
 			<h5>Freelance</h5>
 			<p>Web Developer</p>
