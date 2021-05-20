@@ -105,11 +105,22 @@ export default [
     `,
   },
   {
+    langs: ["react", "next", "htmlcssjs", "figma"],
+    year: "2021",
+    html: `
+      <p>
+        Completed 
+        <a href="https://www.hiatus-wine.com" target="_blank">my third website</a>
+        , for my first real client who owns a vineyard. Designed in Figma.
+      </p>
+      <img src="screenshots/hiatus.gif" alt="Vineyard website"/>
+    `,
+  },
+  {
     langs: ["react", "next", "svelte", "htmlcssjs", "aws"],
     year: "2021",
     html: `
-      <p>Currently working on two projects, with a colleague:</p>
-      <p>- A wine company webpage, with React/Nextjs.</p>
+      <p>Currently working on a project, with a colleague:</p>
       <p>- A food delivery e-commerce app. Frontend: Svelte/Sapper; backend: Strapi CMS, connected to a Mongo DB, as well as AWS S3 for image hosting.</p>
     `,
   },

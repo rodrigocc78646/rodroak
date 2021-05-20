@@ -66,7 +66,7 @@
   :global(.lang-info img) {
     margin: 15px 0;
     width: 100%;
-    max-height: 300px;
+    max-height: 320px;
     object-fit: contain;
     object-position: left;
   }
